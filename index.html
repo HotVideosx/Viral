@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     
-    <!-- Thumbnail Preview Meta Tags -->
+    <!-- Open Graph Meta Tags for Facebook / Social Media Preview -->
     <meta property="og:title" content="Click here to visit our site" />
     <meta property="og:description" content="You are being safely redirected to our page." />
-    <meta property="og:image" content="https://githubusercontent.com" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/HotVideosx/Viral/main/WhatsApp%20Image%202026-08-17%20at%2012.52.04%20PM.jpeg" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hotvideosx.github.io/Viral/" />
     
     <!-- Twitter/X Card Preview -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://githubusercontent.com" />
-
-    <!-- 1. Meta Refresh Delay set to 5 seconds -->
-    <meta http-equiv="refresh" content="5; url=https://effectivecpmnetwork.com">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/HotVideosx/Viral/main/WhatsApp%20Image%202026-08-17%20at%2012.52.04%20PM.jpeg" />
+    
     <title>Redirecting...</title>
     
     <style>
@@ -26,13 +25,15 @@
 <body>
     <h2>Redirecting you to the destination...</h2>
     <div class="spinner"></div>
-    <p>Please wait 5 seconds. If you are not redirected automatically, <a href="https://effectivecpmnetwork.com">click here</a>.</p>
+    <p>Please wait. If you are not redirected automatically, <a href="https://effectivecpmnetwork.com">click here</a>.</p>
 
-    <!-- 2. JavaScript Delay set to 5 seconds (5000 milliseconds) -->
+    <!-- JavaScript handles redirect ONLY after the preview crawler reads the meta tags -->
     <script>
-        setTimeout(function() {
-            window.location.replace("https://effectivecpmnetwork.com");
-        }, 5000);
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.replace("https://effectivecpmnetwork.com");
+            }, 3000); // 3-second delay
+        };
     </script>
 </body>
 </html>
